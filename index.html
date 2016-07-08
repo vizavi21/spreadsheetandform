@@ -30,7 +30,10 @@
       <div ng-repeat="entry in tools | filter: search| orderBy:'gsx$focus.$t'" class="col-md-4">
          <h4><a href="{{ entry.gsx$url.$t }}">{{ entry.gsx$title.$t }} </a></h4>
          <div class="description">{{ entry.gsx$notes.$t}}</div>
-         {{ entry.gsx$focus.$t }} 
+          <p>{{ entry.gsx$url.$t }}</p> 
+          <p>{{ entry.gsx$example.$t }}</p> 
+          <p>{{ entry.gsx$all.$t }}</p> 
+          
       </div>
     </div>
  </div>   
